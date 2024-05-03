@@ -1,0 +1,19 @@
+##################################################################################################################################################################
+
+
+Good For Day (GFD): The order will expire if not filled by the end of the trading day.
+
+Good Till Canceled (GTC): This type of order can remain active for an extended period until the trader cancels it, or it gets filled. Some platforms may set a maximum duration for GTC orders (e.g., 90 days), after which they automatically expire if not executed.
+
+Good Till Date (GTD): The trader specifies an expiration date and time for the order, after which it will expire if not filled.
+
+Immediate or Cancel (IOC): The order must be executed immediately. Any portion that cannot be filled instantly is canceled.
+
+Fill or Kill (FOK): Similar to IOC, but the order must be filled in its entirety immediately or else it is entirely canceled.
+
+
+##################################################################################################################################################################
+
+The requirements.txt contains the packages for "env_for_fast_api_backend"
+
+##################################################################################################################################################################

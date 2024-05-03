@@ -1,0 +1,7 @@
+Locking the mutex before calling the match function ensures that match will execute atomically with respect to other threads that might be trying to access shared resources protected by the same mutex. However, the atomicity of the match function itself depends on its internal implementation and whether it correctly handles concurrent access to shared resources.
+
+If the match function accesses and modifies shared resources (asks, bids, trades_happened) in a thread-safe manner within the critical section protected by the mutex, then the operation will be atomic in the sense that it will be performed without interruption from other threads holding the same mutex.
+
+To summarize, while locking the mutex before calling match helps ensure atomicity with respect to other threads, the atomicity of the match function itself relies on its internal implementation and how it handles concurrent access to shared resources.
+
+
